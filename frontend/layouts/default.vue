@@ -2,16 +2,19 @@
   <div class="layout">
     <Header/>
     <Nuxt/>
+    <Footer />
   </div>
 </template>
 
 <script>
-  import Header from '../components/header/Header'
+  import Header from '../components/header/Header';
+  import Footer from "../components/footer/Footer";
 
   export default {
     name: 'Layout',
     components: {
-      Header
+      Header,
+      Footer
     },
     props: {},
     data () {

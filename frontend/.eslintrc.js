@@ -10,9 +10,10 @@ module.exports = {
   extends: [
     '@nuxtjs',
     'plugin:nuxt/recommended',
+    "prettier"
   ],
-  plugins: [],
-  // add your custom rules here
+  plugins: [
+  ],
   rules: {
     'linebreak-style': 'off', // Неправильно работает в Windows.
     'arrow-parens': 'off', // Несовместимо с prettier
@@ -21,11 +22,11 @@ module.exports = {
     'function-paren-newline': 'off', // Несовместимо с prettier
     'no-plusplus': 'off',
     'space-before-function-paren': 0, // Несовместимо с prettier
-    'max-len': ['error', 100, 2, { ignoreUrls: true, }], // airbnb позволяет некоторые пограничные случаи
+    'max-len': ['error', 100, 2, {ignoreUrls: true,}], // airbnb позволяет некоторые пограничные случаи
     'no-console': 'error', // airbnb использует предупреждение
     'no-alert': 'error', // airbnb использует предупреждение
-    "radix": "off", // parseInt, parseFloat и radix выключены. Мне это не нравится.
+    'radix': "off", // parseInt, parseFloat и radix выключены. Мне это не нравится.
     'prefer-destructuring': 'off',
-    "indent": ["error", 2]
+    indent: "off",
   }
 }
