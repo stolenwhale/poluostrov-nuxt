@@ -1,0 +1,69 @@
+$path: '/wp-content/themes/poluostrov/src/fonts/';
+
+@font-face {
+  font-family: 'Adelle Cyrillic';
+  src: url($path + 'AdelleCyrillic.eot');
+  src: local($path + 'Adelle Cyrillic'), local($path + 'AdelleCyrillic'),
+  url($path + 'AdelleCyrillic.eot?#iefix') format('embedded-opentype'),
+  url($path + 'AdelleCyrillic.woff') format('woff'),
+  url($path + 'AdelleCyrillic.ttf') format('truetype');
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Adelle Cyrillic';
+  src: url($path + 'AdelleCyrillic-Light.eot');
+  src: local($path + 'Adelle Cyrillic-Light'), local($path + 'AdelleCyrillic'),
+  url($path + 'AdelleCyrillic.eot-Light?#iefix') format('embedded-opentype'),
+  url($path + 'AdelleCyrillic-Light.woff') format('woff'),
+  url($path + 'AdelleCyrillic-Light.ttf') format('truetype');
+  font-weight: 300;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Adelle Cyrillic';
+  src: url($path + 'AdelleCyrillic-Italic.eot');
+  src: local($path + 'Adelle Cyrillic Italic'), local('AdelleCyrillic-Italic'),
+  url($path + 'AdelleCyrillic-Italic.eot?#iefix') format('embedded-opentype'),
+  url($path + 'AdelleCyrillic-Italic.woff') format('woff'),
+  url($path + 'AdelleCyrillic-Italic.ttf') format('truetype');
+  font-weight: 400;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: 'Adelle Cyrillic';
+  src: url($path + 'AdelleCyrillic-LightItalic.eot');
+  src: local($path + 'AdelleCyrillic-LightItalic'), local('AdelleCyrillic-LightItalic'),
+  url($path + 'AdelleCyrillic-LightItalic.eot?#iefix') format('embedded-opentype'),
+  url($path + 'AdelleCyrillic-LightItalic.woff') format('woff'),
+  url($path + 'AdelleCyrillic-LightItalic.ttf') format('truetype');
+  font-weight: 300;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: 'Jost';
+  src: url($path + 'Jost-Regular.eot');
+  src: local($path + 'Jost Regular'), local('Jost-Regular'),
+  url($path + 'Jost-Regular.eot?#iefix') format('embedded-opentype'),
+  url($path + 'Jost-Regular.woff2') format('woff2'),
+  url($path + 'Jost-Regular.woff') format('woff'),
+  url($path + 'Jost-Regular.ttf') format('truetype');
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Jost';
+  src: url($path + 'Jost-Bold.eot');
+  src: local($path + 'Jost Bold'), local('Jost-ExtraBold'),
+  url($path + 'Jost-Bold.eot?#iefix') format('embedded-opentype'),
+  url($path + 'Jost-Bold.woff2') format('woff2'),
+  url($path + 'Jost-Bold.woff') format('woff'),
+  url($path + 'Jost-Bold.ttf') format('truetype');
+  font-weight: 700;
+  font-style: normal;
+}

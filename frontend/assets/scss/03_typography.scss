@@ -1,0 +1,269 @@
+.typography {
+  &-content {
+    p {
+      color: $color-black;
+      font-size: 24px;
+      line-height: 30px;
+    }
+
+    &--two-cols {
+      column-count: 2;
+      column-gap: 65px;
+      margin-bottom: 25px;
+    }
+
+    br {
+      display: none;
+    }
+
+    a {
+      position: relative;
+      text-decoration: none;
+
+      &:before {
+        content: "";
+        background-color: $fountainBlue;
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        z-index: -1;
+        transition: .5s cubic-bezier(.645, .045, .355, 1);
+      }
+
+      &:hover {
+        &:before {
+          width: 0;
+        }
+      }
+    }
+
+  }
+
+  &-content_columns {
+    display: flex;
+    justify-content: space-between;
+    margin: 120px 0;
+
+    &-1,
+    &-2 {
+      width: calc(50% - 20px);
+    }
+  }
+
+  &-content__content-end {
+    width: 60px;
+    height: 60px;
+    margin: 60px auto 120px;
+    background-color: $nileBlue;
+    border-radius: 9px;
+  }
+
+  &-descriptor {
+    font-weight: 600;
+    font-size: 28px;
+    line-height: 36px;
+    letter-spacing: 0.02em;
+    padding: 0 50px;
+    margin: 120px 0;
+    color: $nileBlue;
+  }
+
+  &-subtitle {
+    margin: 120px 0 60px;
+    padding-left: 60px;
+    font-weight: 600;
+    font-size: 28px;
+    line-height: 36px;
+    letter-spacing: 0.02em;
+    color: $nileBlue;
+
+    & ~ .typography-content_columns,
+    & ~ * {
+      margin-top: 60px;
+    }
+  }
+
+  &-slider {
+    position: relative;
+    margin: 60px 0;
+  }
+
+  &-images {
+    margin: 60px 0;
+
+    &_full {
+      margin-left: -100%;
+      margin-right: -100%;
+      display: flex;
+      justify-content: center;
+    }
+
+    &_twice {
+      display: flex;
+      justify-content: space-between;
+
+      img {
+        width: calc(50% - 30px);
+      }
+    }
+  }
+
+  &-quote {
+    width: 600px;
+    margin: 120px auto;
+    position: relative;
+    padding-top: 60px;
+    text-align: center;
+    font-weight: 300;
+    font-size: 28px;
+    line-height: 36px;
+    font-style: italic;
+
+    &:before {
+      content: "";
+      position: absolute;
+      top: 0;
+      left: 50%;
+      transform: translateX(-50%);
+      width: 30px;
+      height: 30px;
+      background: $nileBlue;
+      border-radius: 50%;
+    }
+  }
+}
+
+
+h1, .h1 {
+  margin: 0 0 60px;
+  color: $nileBlue;
+  font-family: $font-secondary;
+  font-weight: 800;
+  font-size: 50px;
+  line-height: 50px;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+}
+
+h2, .h2 {
+  margin: 0 0 60px;
+  color: $nileBlue;
+  font-family: $font-secondary;
+  font-weight: 800;
+  font-size: 50px;
+  line-height: 50px;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+}
+
+a {
+  color: $color-black;
+  outline: none;
+}
+
+a:visited {
+  color: $color-black;
+  outline: none;
+}
+
+a:hover,
+a:focus,
+a:active {
+  color: $color-black;
+  outline: none;
+}
+
+.link {
+  &_source {
+    font-size: 12px;
+    line-height: 25px;
+    letter-spacing: 0.08em;
+    text-shadow: $text-shadow;
+    text-decoration: none;
+    color: $color-white;
+    transition: .4s ease;
+
+    &:visited {
+      color: $color-white;
+    }
+
+    &:hover {
+      color: #dbeff4;
+    }
+  }
+
+  &_photographer {
+    font-size: 10px;
+    line-height: 8px;
+    color: $color-white;
+    text-shadow: $text-shadow;
+
+    a {
+      color: $color-white;
+      text-decoration: none;
+    }
+
+    &-dark {
+      color: #303030;
+      text-shadow: none;
+
+      a {
+        color: #303030;
+        text-shadow: none;
+      }
+    }
+  }
+}
+
+.card {
+  &__title {
+    font-family: $font-secondary;
+    font-weight: 800;
+    font-size: 22px;
+    line-height: 25px;
+    text-shadow: $text-shadow;
+  }
+}
+
+ul {
+  list-style: none;
+  margin: 20px 0;
+  padding: 0;
+
+  li {
+    position: relative;
+    font-weight: 300;
+    font-size: 24px;
+    line-height: 30px;
+    letter-spacing: 0.02em;
+    margin-bottom: 20px;
+    padding-left: 23px;
+
+    &:before {
+      content: "";
+      position: absolute;
+      display: block;
+      width: 15px;
+      height: 15px;
+      background: $fountainBlue;
+      border-radius: 4px;
+      left: 0;
+      top: 5px;
+    }
+  }
+}
+
+.title {
+  &_white {
+    color: $color-white;
+    text-shadow: $text-shadow;
+  }
+
+  &_shift {
+    padding-left: 60px;
+  }
+}
+
+.green {
+  color: $fountainBlue;
+}
