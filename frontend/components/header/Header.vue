@@ -1,18 +1,13 @@
 <template>
-  <div class="layout">
-    <Header/>
-    <Nuxt/>
-  </div>
+  <header>
+    header
+  </header>
 </template>
 
 <script>
-  import Header from '../components/header/Header'
-
   export default {
-    name: 'Layout',
-    components: {
-      Header
-    },
+    name: 'Header',
+    components: {},
     props: {},
     data () {
       return {}
