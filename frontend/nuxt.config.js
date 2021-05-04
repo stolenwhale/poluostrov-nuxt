@@ -20,9 +20,9 @@ export default {
     '@nuxtjs/stylelint-module',
   ],
   modules: [
-    // https://go.nuxtjs.dev/axios
     '@nuxtjs/axios',
-    "@nuxtjs/style-resources"
+    "@nuxtjs/style-resources",
+    '@nuxtjs/apollo'
   ],
   axios: {
     baseURL: 'http://poluostrov-nuxt.local/',
@@ -39,11 +39,10 @@ export default {
   styleResources: {
     scss: ["./assets/scss/*.scss"]
   },
-  graphql: {
-    clients: {
+  apollo: {
+    clientConfigs: {
       default: {
-        endpoint: '/backend/api',
-        options: {},
+        httpEndpoint: 'http://poluostrov-nuxt.local/backend/api',
       }
     }
   }
