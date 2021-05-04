@@ -11,15 +11,12 @@ html {
 body {
   height: 100%;
   margin: 0;
-
   font-family: $font-primary;
   font-size: 24px;
   line-height: 30px;
   color: $color-black;
   text-rendering: optimizeSpeed;
-
   scroll-behavior: smooth;
-
   overflow-x: hidden;
 }
 
@@ -28,7 +25,6 @@ img {
   width: auto;
   height: auto;
   max-width: 100%;
-
   object-position: center;
 }
 
@@ -43,15 +39,30 @@ p {
 }
 
 a {
+  color: $color-black;
+  outline: none;
+
   &:not([href]) {
     cursor: default;
+  }
+
+  &:visited {
+    color: $color-black;
+    outline: none;
+  }
+
+  &:hover,
+  &:focus,
+  &:active {
+    color: $color-black;
+    outline: none;
   }
 }
 
 .swiper-pagination {
   .swiper-pagination-bullet {
     background: $color-white;
-    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    box-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
     border-radius: 4px;
     width: 15px;
     height: 15px;
@@ -103,17 +114,11 @@ a {
       z-index: -1;
     }
 
-    input:checked + .input__label {
-      &:after {
-        opacity: 1;
-      }
-    }
-
     .input__label {
       position: relative;
       padding-left: 25px;
 
-      &:before {
+      &::before {
         content: "";
         position: absolute;
         top: 1px;
@@ -126,7 +131,7 @@ a {
         transition: .4s ease;
       }
 
-      &:after {
+      &::after {
         content: "";
         position: absolute;
         left: 5px;
@@ -141,6 +146,11 @@ a {
       }
     }
 
+    input:checked {
+      & + .input__label::after {
+        opacity: 1;
+      }
+    }
   }
 }
 
@@ -197,6 +207,7 @@ a {
   &__photographer.link {
     color: $color-black;
     text-shadow: none;
+
     a {
       color: $color-black;
     }
@@ -272,7 +283,7 @@ a {
     width: 20px;
     padding: 0;
 
-    &:before {
+    &::before {
       content: "";
       position: absolute;
       top: 50%;
@@ -285,7 +296,7 @@ a {
       );
     }
 
-    &:after {
+    &::after {
       content: "";
       position: absolute;
       top: 50%;
@@ -293,9 +304,7 @@ a {
       height: 2px;
       width: 15px;
       background-color: $color-black;
-      transform: translate(-50%, -50%) rotate(
-          45deg
-      );
+      transform: translate(-50%, -50%) rotate(45deg);
     }
   }
 }

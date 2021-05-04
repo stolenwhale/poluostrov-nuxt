@@ -1,3 +1,45 @@
+.link {
+  &_source {
+    font-size: 12px;
+    line-height: 25px;
+    letter-spacing: 0.08em;
+    text-shadow: $text-shadow;
+    text-decoration: none;
+    color: $color-white;
+    transition: .4s ease;
+
+    &:visited {
+      color: $color-white;
+    }
+
+    &:hover {
+      color: #dbeff4;
+    }
+  }
+
+  &_photographer {
+    font-size: 10px;
+    line-height: 8px;
+    color: $color-white;
+    text-shadow: $text-shadow;
+
+    a {
+      color: $color-white;
+      text-decoration: none;
+    }
+
+    &-dark {
+      color: #303030;
+      text-shadow: none;
+
+      a {
+        color: #303030;
+        text-shadow: none;
+      }
+    }
+  }
+}
+
 .typography {
   &-content {
     p {
@@ -20,7 +62,7 @@
       position: relative;
       text-decoration: none;
 
-      &:before {
+      &::before {
         content: "";
         background-color: $fountainBlue;
         position: absolute;
@@ -31,12 +73,11 @@
       }
 
       &:hover {
-        &:before {
+        &::before {
           width: 0;
         }
       }
     }
-
   }
 
   &-content_columns {
@@ -119,7 +160,7 @@
     line-height: 36px;
     font-style: italic;
 
-    &:before {
+    &::before {
       content: "";
       position: absolute;
       top: 0;
@@ -132,7 +173,6 @@
     }
   }
 }
-
 
 h1, .h1 {
   margin: 0 0 60px;
@@ -154,65 +194,6 @@ h2, .h2 {
   line-height: 50px;
   letter-spacing: 0.1em;
   text-transform: uppercase;
-}
-
-a {
-  color: $color-black;
-  outline: none;
-}
-
-a:visited {
-  color: $color-black;
-  outline: none;
-}
-
-a:hover,
-a:focus,
-a:active {
-  color: $color-black;
-  outline: none;
-}
-
-.link {
-  &_source {
-    font-size: 12px;
-    line-height: 25px;
-    letter-spacing: 0.08em;
-    text-shadow: $text-shadow;
-    text-decoration: none;
-    color: $color-white;
-    transition: .4s ease;
-
-    &:visited {
-      color: $color-white;
-    }
-
-    &:hover {
-      color: #dbeff4;
-    }
-  }
-
-  &_photographer {
-    font-size: 10px;
-    line-height: 8px;
-    color: $color-white;
-    text-shadow: $text-shadow;
-
-    a {
-      color: $color-white;
-      text-decoration: none;
-    }
-
-    &-dark {
-      color: #303030;
-      text-shadow: none;
-
-      a {
-        color: #303030;
-        text-shadow: none;
-      }
-    }
-  }
 }
 
 .card {
@@ -239,7 +220,7 @@ ul {
     margin-bottom: 20px;
     padding-left: 23px;
 
-    &:before {
+    &::before {
       content: "";
       position: absolute;
       display: block;

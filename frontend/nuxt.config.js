@@ -39,7 +39,12 @@ export default {
 
   // Axios module configuration: https://go.nuxtjs.dev/config-axios
   axios: {},
-
+  proxy: {
+    '/api/': {
+      target: 'http://all-migrations.bitrix.dev.realweb.ru/api/',
+      pathRewrite: {'^/api/': ''}
+    },
+  },
   // Build Configuration: https://go.nuxtjs.dev/config-build
   build: {},
   styleResources: {
