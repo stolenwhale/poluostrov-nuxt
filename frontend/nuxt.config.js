@@ -38,10 +38,14 @@ export default {
   ],
 
   // Axios module configuration: https://go.nuxtjs.dev/config-axios
-  axios: {},
+  axios: {
+    baseURL: 'http://poluostrov-nuxt.local/',
+    proxy: true,
+    credentials: true,
+  },
   proxy: {
     '/api/': {
-      target: 'http://all-migrations.bitrix.dev.realweb.ru/api/',
+      target: 'http://poluostrov-nuxt.local/api/',
       pathRewrite: {'^/api/': ''}
     },
   },
