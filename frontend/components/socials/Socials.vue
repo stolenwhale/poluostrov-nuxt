@@ -1,6 +1,11 @@
 <template>
 	<div class="socials">
-    <svg-icon name="inst" />
+    <a href="/" class="socials__link">
+      <svg-icon class="socials__link-icon" name="vk" />
+    </a>
+    <a href="/" class="socials__link">
+      <svg-icon class="socials__link-icon" name="inst" />
+    </a>
   </div>
 </template>
 
@@ -18,3 +23,5 @@
 		methods: {},
 	}
 </script>
+
+<style lang="scss" src="./socials.scss"></style>

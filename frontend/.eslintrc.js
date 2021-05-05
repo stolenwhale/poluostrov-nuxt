@@ -10,9 +10,10 @@ module.exports = {
   extends: [
     '@nuxtjs',
     'plugin:nuxt/recommended',
-    "prettier"
+    'prettier',
   ],
   plugins: [
+
   ],
   rules: {
     'linebreak-style': 'off', // Неправильно работает в Windows.
@@ -22,11 +23,9 @@ module.exports = {
     'function-paren-newline': 'off', // Несовместимо с prettier
     'no-plusplus': 'off',
     'space-before-function-paren': 0, // Несовместимо с prettier
-    'max-len': ['error', 100, 2, {ignoreUrls: true,}], // airbnb позволяет некоторые пограничные случаи
-    'no-console': 'error', // airbnb использует предупреждение
-    'no-alert': 'error', // airbnb использует предупреждение
-    'radix': "off", // parseInt, parseFloat и radix выключены. Мне это не нравится.
+    'max-len': ['error', 100, 2, {ignoreUrls: true,}],
     'prefer-destructuring': 'off',
-    indent: "off",
+    indent: 'off',
+    'vue/require-v-for-key': 'off',
   }
 }

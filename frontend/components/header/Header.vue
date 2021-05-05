@@ -9,7 +9,7 @@
 <script>
 	import Socials from '../socials/Socials';
 	import HeaderLogo from './HeaderLogo'
-	import HeaderMenu from './HeaderMenu';
+	import HeaderMenu from './menu/HeaderMenu';
 
   export default {
 		name: 'Header',

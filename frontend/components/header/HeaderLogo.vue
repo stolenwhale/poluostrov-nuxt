@@ -1,8 +1,7 @@
 <template>
-  <div class="header__logo">
-<!--    <img alt="Полуостров" data-src="/images/layout/logo.svg" v-lazy-load>-->
+  <a href="" class="header__logo">
     <img alt="Полуостров" src="/images/layout/logo.svg">
-  </div>
+  </a>
 </template>
 
 <script>
