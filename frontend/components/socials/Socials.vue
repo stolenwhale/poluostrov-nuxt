@@ -1,6 +1,6 @@
 <template>
 	<div class="socials">
-
+    <svg-icon name="inst" />
   </div>
 </template>
 

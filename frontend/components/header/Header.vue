@@ -2,11 +2,12 @@
 	<header class="header container">
 		<HeaderLogo />
 		<HeaderMenu />
-
+		<Socials />
 	</header>
 </template>
 
 <script>
+	import Socials from '../socials/Socials';
 	import HeaderLogo from './HeaderLogo'
 	import HeaderMenu from './HeaderMenu';
 
@@ -14,7 +15,8 @@
 		name: 'Header',
 		components: {
 			HeaderLogo,
-			HeaderMenu
+			HeaderMenu,
+			Socials
 		},
 		props: {},
 		data() {

@@ -22,6 +22,7 @@ export default {
     '@nuxtjs/eslint-module',
     '@nuxtjs/stylelint-module',
     "@nuxtjs/style-resources",
+    '@nuxtjs/svg-sprite'
   ],
   modules: [
     '@nuxtjs/axios',
@@ -74,5 +75,8 @@ export default {
         httpEndpoint: 'http://localhost:1337/graphql',
       }
     }
+  },
+  svgSprite: {
+    input: '~/assets/svg/'
   }
 }
