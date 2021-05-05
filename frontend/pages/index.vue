@@ -4,40 +4,29 @@
 </template>
 
 <script>
-  import {gql} from 'graphql-tag';
+  import { gql } from 'graphql-tag'
 
   export default {
     name: 'Index',
-    async asyncData({$axios}) {
-      const ip = await $axios.$get('/backend/wp-json/wp/v2/posts/1');
+    async asyncData({ $axios }) {
 
-
-      return {ip};
     },
     created() {
 
     },
     mounted() {
-      // eslint-disable-next-line no-console
-      console.log(this.$apollo)
-
+      if(this.locations && this.locations.length) {
+        this.$store.dispatch("setLocations", this.locations);
+      }
     },
     apollo: {
-      posts: {
-        query: gql`
-          query GetPostsEdges {
-            posts {
-              edges {
-                node {
-                  id
-                  title
-                  date
-                }
-              }
+      locations: gql`
+          query {
+            locations {
+              name
             }
           }
-          `
-      },
-    }
+        `,
+    },
   }
 </script>

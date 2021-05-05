@@ -1,5 +1,4 @@
 export default {
-  // Global page headers: https://go.nuxtjs.dev/config-head
   head: {
     title: 'frontend',
     htmlAttrs: {
@@ -22,16 +21,36 @@ export default {
   modules: [
     '@nuxtjs/axios',
     "@nuxtjs/style-resources",
-    '@nuxtjs/apollo'
+    '@nuxtjs/apollo',
+    ['nuxt-lazy-load', {
+      images: true,
+      videos: true,
+      audios: true,
+      iframes: true,
+      native: false,
+      polyfill: true,
+      directiveOnly: false,
+
+      // Default image must be in the static folder
+      // defaultImage: '/images/default-image.jpg',
+
+      loadingClass: 'lazyLoad--is-loading',
+      loadedClass: 'lazyLoad--is-loaded',
+      appendClass: 'lazyLoad',
+
+      observerConfig: {
+        // See IntersectionObserver documentation
+      }
+    }]
   ],
   axios: {
-    baseURL: 'http://poluostrov-nuxt.local/',
+    baseURL: 'http://localhost:1337/',
     proxy: true,
     credentials: true,
   },
   proxy: {
     '/api/': {
-      target: 'http://poluostrov-nuxt.local/api/',
+      target: 'http://localhost:1337/graphql/',
       pathRewrite: {'^/api/': ''}
     },
   },
@@ -42,7 +61,7 @@ export default {
   apollo: {
     clientConfigs: {
       default: {
-        httpEndpoint: 'http://poluostrov-nuxt.local/backend/api',
+        httpEndpoint: 'http://localhost:1337/graphql',
       }
     }
   }
