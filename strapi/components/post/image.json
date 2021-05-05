@@ -1,0 +1,30 @@
+{
+  "collectionName": "components_post_images",
+  "info": {
+    "name": "image",
+    "icon": "file-image",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "image": {
+      "collection": "file",
+      "via": "related",
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos"
+      ],
+      "plugin": "upload",
+      "required": false,
+      "pluginOptions": {}
+    },
+    "type": {
+      "type": "enumeration",
+      "enum": [
+        "single",
+        "slider"
+      ]
+    }
+  }
+}

@@ -1,0 +1,15 @@
+{
+  "collectionName": "components_slider_sliders",
+  "info": {
+    "name": "slider",
+    "icon": "clone"
+  },
+  "options": {},
+  "attributes": {
+    "slide": {
+      "type": "component",
+      "repeatable": true,
+      "component": "slider.slide"
+    }
+  }
+}

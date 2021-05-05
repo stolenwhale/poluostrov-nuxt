@@ -1,0 +1,29 @@
+{
+  "collectionName": "components_slider_slides",
+  "info": {
+    "name": "slide",
+    "icon": "file",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "image": {
+      "model": "file",
+      "via": "related",
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos"
+      ],
+      "plugin": "upload",
+      "required": false,
+      "pluginOptions": {}
+    },
+    "author": {
+      "model": "authors"
+    },
+    "title": {
+      "type": "string"
+    }
+  }
+}

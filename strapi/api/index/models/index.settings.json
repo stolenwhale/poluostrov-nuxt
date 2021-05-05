@@ -1,0 +1,27 @@
+{
+  "kind": "singleType",
+  "collectionName": "indices",
+  "info": {
+    "name": "Index",
+    "description": ""
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "head_slider": {
+      "type": "dynamiczone",
+      "components": []
+    },
+    "intro": {
+      "type": "dynamiczone",
+      "components": [
+        "post.image",
+        "post.text-column"
+      ]
+    }
+  }
+}

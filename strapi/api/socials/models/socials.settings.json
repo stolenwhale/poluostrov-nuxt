@@ -1,0 +1,21 @@
+{
+  "kind": "singleType",
+  "collectionName": "socials",
+  "info": {
+    "name": "socials",
+    "description": ""
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "social": {
+      "type": "component",
+      "repeatable": true,
+      "component": "socials.social-link"
+    }
+  }
+}

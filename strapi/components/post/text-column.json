@@ -1,0 +1,16 @@
+{
+  "collectionName": "components_post_text_columns",
+  "info": {
+    "name": "text_column",
+    "icon": "border-style"
+  },
+  "options": {},
+  "attributes": {
+    "column_1": {
+      "type": "richtext"
+    },
+    "column_2": {
+      "type": "richtext"
+    }
+  }
+}
