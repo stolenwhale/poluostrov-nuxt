@@ -1,23 +1,25 @@
 <template>
-	<header class="header">
-    <div class="header__inner container">
-      <nav class="header__menu">
-        <div class="header__menu-item header__menu-logo">
-          <img v-lazy-load alt="Полуостров" data-src="/images/layout/logo.svg">
-        </div>
-      </nav>
-    </div>
+	<header class="header container">
+		<HeaderLogo />
+		<HeaderMenu />
+
 	</header>
 </template>
 
 <script>
+	import HeaderLogo from './HeaderLogo'
+	import HeaderMenu from './HeaderMenu';
+
   export default {
 		name: 'Header',
-		components: {},
+		components: {
+			HeaderLogo,
+			HeaderMenu
+		},
 		props: {},
 		data() {
 			return {
-			  locations: this.$store.locations
+
       }
 		},
 		computed: {},

@@ -1,22 +1,22 @@
 <template>
-  <footer>
-    footer12
-  </footer>
+  <nav>
+123
+  </nav>
 </template>
 
 <script>
   export default {
-    name: 'Footer',
+    name: 'HeaderMenu',
     components: {},
     props: {},
     data() {
-      return {}
+      return {
+        locations: this.$store.locations
+      }
     },
     computed: {},
     mounted() {
     },
-    methods: {}
+    methods: {},
   }
 </script>
-
-<style lang="scss" src="./footer.scss"></style>

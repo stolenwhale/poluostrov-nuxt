@@ -1,3 +1,166 @@
-body {
+.header {
+  padding-top: 40px;
 
+  &--transparent {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 10;
+  }
+
+  &__inner {
+    display: flex;
+    align-items: flex-end;
+  }
+
+  &__menu {
+    display: flex;
+    align-items: flex-end;
+  }
+
+  &__menu-item {
+    margin: 0 50px;
+    position: relative;
+
+    &--sub {
+      .header__menu-sub {
+        opacity: 0;
+        max-height: 0;
+        overflow: hidden;
+        transition: .4s ease;
+      }
+
+      &:hover {
+        .header__menu-sub {
+          opacity: 1;
+          max-height: 200px;
+        }
+      }
+    }
+  }
+
+  &__menu-link {
+    margin: 75px auto 0;
+
+    font-weight: 300;
+    font-size: 17px;
+    line-height: 17px;
+    color: $color-black;
+
+    cursor: pointer;
+  }
+
+  &__menu-logo {
+    flex-shrink: 0;
+    width: 350px;
+    margin: 0 40px 0 0;
+    position: relative;
+    top: -5px;
+
+    &_digest {
+      flex-shrink: 0;
+      width: 310px;
+    }
+  }
+
+  &__menu-sub {
+    position: absolute;
+    background: rgba(255, 255, 255, 0.9);
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+    z-index: 2;
+    border-radius: 0px 0px 15px 15px;
+
+    &_grid {
+      width: 375px;
+
+      .header__menu-sub-inner {
+        display: flex;
+        flex-wrap: wrap;
+        width: 100%;
+        padding: 10px 20px;
+      }
+
+      .header__menu-sub-item {
+        width: 50%;
+        padding-right: 15px;
+      }
+    }
+  }
+
+  &__menu-sub-inner {
+    padding: 10px;
+    min-width: 147px;
+    width: fit-content;
+  }
+
+  &__menu-sub-item {
+    position: relative;
+    display: flex;
+    align-items: flex-end;
+    margin-bottom: 15px;
+
+    .header__menu-sub-link {
+      margin-bottom: 5px;
+    }
+
+    &--tourism:before,
+    &--must-go:before,
+    &--eat-live:before {
+      content: "";
+      display: block;
+      width: 27px;
+      height: 40px;
+      margin-right: 8px;
+      background-repeat: no-repeat;
+      background-size: cover;
+    }
+
+    &--tourism {
+      &:before {
+        background-image: url("/wp-content/themes/poluostrov/src/images/header/menu_turism.png");
+      }
+    }
+
+
+    &--must-go {
+      &:before {
+        background-image: url("/wp-content/themes/poluostrov/src/images/header/menu_must-go.png");
+      }
+    }
+
+    &--eat-live {
+      &:before {
+        background-image: url("/wp-content/themes/poluostrov/src/images/header/menu_eat-live.png");
+      }
+    }
+  }
+
+  &__menu-sub-link {
+    font-weight: 300;
+    font-size: 15px;
+    line-height: 15px;
+  }
+
+  &_digest {
+    .header__menu-item {
+      margin: 0 60px 0 0;
+      width: auto;
+
+      &_main {
+        flex-grow: 1;
+        text-align: right;
+      }
+    }
+  }
+
+  &__socials {
+    display: flex;
+    justify-content: flex-end;
+    flex-grow: 1;
+
+    &-item {
+      margin-left: 15px;
+    }
+  }
 }

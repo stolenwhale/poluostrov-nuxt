@@ -11,12 +11,17 @@ export default {
     ],
     link: [{ rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' }],
   },
-  css: [],
+  css: [
+    '@/assets/scss/01_base.scss',
+    '@/assets/scss/02_fonts.scss',
+    '@/assets/scss/03_typography.scss',
+  ],
   plugins: [],
   components: true,
   buildModules: [
     '@nuxtjs/eslint-module',
     '@nuxtjs/stylelint-module',
+    "@nuxtjs/style-resources",
   ],
   modules: [
     '@nuxtjs/axios',
@@ -56,7 +61,12 @@ export default {
   },
   build: {},
   styleResources: {
-    scss: ["./assets/scss/*.scss"]
+    scss: [
+      "./assets/scss/*.scss",
+      "./components/**/*.scss",
+      "./layouts/**/*.scss",
+      "./pages/**/*.scss",
+    ]
   },
   apollo: {
     clientConfigs: {

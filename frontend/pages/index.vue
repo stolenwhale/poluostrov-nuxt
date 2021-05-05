@@ -8,6 +8,7 @@
 
   export default {
     name: 'Index',
+    components: {},
     async asyncData({ $axios }) {
 
     },
