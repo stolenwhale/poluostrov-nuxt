@@ -41,6 +41,7 @@ p {
 a {
   color: $color-black;
   outline: none;
+  text-decoration: none;
 
   &:not([href]) {
     cursor: default;

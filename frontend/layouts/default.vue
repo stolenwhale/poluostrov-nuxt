@@ -7,6 +7,7 @@
 </template>
 
 <script>
+  import {gql} from "graphql-tag";
   import Header from '../components/header/Header';
   import Footer from "../components/footer/Footer";
 
@@ -22,8 +23,21 @@
     },
     computed: {},
     mounted () {
+      if(this.locations && this.locations.length) {
+        this.$store.dispatch("setLocations", this.locations);
+      }
     },
-    methods: {}
+    methods: {},
+    apollo: {
+      locations: gql`
+          query {
+            locations {
+              id,
+              name
+            }
+          }
+        `,
+    },
   }
 </script>
 

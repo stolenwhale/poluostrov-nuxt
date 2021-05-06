@@ -12,7 +12,9 @@
           <svg-icon v-if="submenuItem.svgName"
                     :name="submenuItem.svgName"
                     class="header-menu__submenu-icon" />
-          {{submenuItem.text}}
+          <span class="header-menu__submenu-text btn btn--underline-reverse">
+            {{submenuItem.text}}
+          </span>
         </a>
       </div>
     </template>

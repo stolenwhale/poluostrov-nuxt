@@ -18,5 +18,3 @@
     methods: {}
   }
 </script>
-
-<style lang="scss" src="./footer.scss"></style>
