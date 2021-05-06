@@ -1,69 +1,355 @@
-$path: '/wp-content/themes/poluostrov/src/fonts/';
+$pathAdelle: '~/assets/fonts/AdelleCyrillic/';
+$pathJost: '~/assets/fonts/Jost/';
 
 @font-face {
   font-family: 'Adelle Cyrillic';
-  src: url($path + 'AdelleCyrillic.eot');
-  src: local($path + 'Adelle Cyrillic'), local($path + 'AdelleCyrillic'),
-  url($path + 'AdelleCyrillic.eot?#iefix') format('embedded-opentype'),
-  url($path + 'AdelleCyrillic.woff') format('woff'),
-  url($path + 'AdelleCyrillic.ttf') format('truetype');
-  font-weight: 400;
+  src: url($pathAdelle + 'AdelleCyrillic-Thin.eot');
+  src: local('Adelle Cyrillic Thin'), local('AdelleCyrillic-Thin'),
+  url($pathAdelle + 'AdelleCyrillic-Thin.eot?#iefix') format('embedded-opentype'),
+  url($pathAdelle + 'AdelleCyrillic-Thin.woff') format('woff'),
+  url($pathAdelle + 'AdelleCyrillic-Thin.ttf') format('truetype');
+  font-weight: 100;
   font-style: normal;
 }
 
 @font-face {
   font-family: 'Adelle Cyrillic';
-  src: url($path + 'AdelleCyrillic-Light.eot');
-  src: local($path + 'Adelle Cyrillic-Light'), local($path + 'AdelleCyrillic'),
-  url($path + 'AdelleCyrillic.eot-Light?#iefix') format('embedded-opentype'),
-  url($path + 'AdelleCyrillic-Light.woff') format('woff'),
-  url($path + 'AdelleCyrillic-Light.ttf') format('truetype');
+  src: url($pathAdelle + 'AdelleCyrillic-ThinItalic.eot');
+  src: local('Adelle Cyrillic Thin Italic'), local('AdelleCyrillic-ThinItalic'),
+  url($pathAdelle + 'AdelleCyrillic-ThinItalic.eot?#iefix') format('embedded-opentype'),
+  url($pathAdelle + 'AdelleCyrillic-ThinItalic.woff') format('woff'),
+  url($pathAdelle + 'AdelleCyrillic-ThinItalic.ttf') format('truetype');
+  font-weight: 100;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: 'Adelle Cyrillic';
+  src: url($pathAdelle + 'AdelleCyrillic-BoldItalic.eot');
+  src: local('Adelle Cyrillic Bold Italic'), local('AdelleCyrillic-BoldItalic'),
+  url($pathAdelle + 'AdelleCyrillic-BoldItalic.eot?#iefix') format('embedded-opentype'),
+  url($pathAdelle + 'AdelleCyrillic-BoldItalic.woff') format('woff'),
+  url($pathAdelle + 'AdelleCyrillic-BoldItalic.ttf') format('truetype');
+  font-weight: bold;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: 'Adelle Cyrillic';
+  src: url($pathAdelle + 'AdelleCyrillic-Bold.eot');
+  src: local('Adelle Cyrillic Bold'), local('AdelleCyrillic-Bold'),
+  url($pathAdelle + 'AdelleCyrillic-Bold.eot?#iefix') format('embedded-opentype'),
+  url($pathAdelle + 'AdelleCyrillic-Bold.woff') format('woff'),
+  url($pathAdelle + 'AdelleCyrillic-Bold.ttf') format('truetype');
+  font-weight: bold;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Adelle Cyrillic';
+  src: url($pathAdelle + 'AdelleCyrillic-ExtraboldItalic.eot');
+  src: local('Adelle Cyrillic Extrabold Italic'), local('AdelleCyrillic-ExtraboldItalic'),
+  url($pathAdelle + 'AdelleCyrillic-ExtraboldItalic.eot?#iefix') format('embedded-opentype'),
+  url($pathAdelle + 'AdelleCyrillic-ExtraboldItalic.woff') format('woff'),
+  url($pathAdelle + 'AdelleCyrillic-ExtraboldItalic.ttf') format('truetype');
+  font-weight: 800;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: 'Adelle Cyrillic';
+  src: url($pathAdelle + 'AdelleCyrillic-Heavy.eot');
+  src: local('Adelle Cyrillic Heavy'), local('AdelleCyrillic-Heavy'),
+  url($pathAdelle + 'AdelleCyrillic-Heavy.eot?#iefix') format('embedded-opentype'),
+  url($pathAdelle + 'AdelleCyrillic-Heavy.woff') format('woff'),
+  url($pathAdelle + 'AdelleCyrillic-Heavy.ttf') format('truetype');
+  font-weight: 900;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Adelle Cyrillic';
+  src: url($pathAdelle + 'AdelleCyrillic-LightItalic.eot');
+  src: local('Adelle Cyrillic Light Italic'), local('AdelleCyrillic-LightItalic'),
+  url($pathAdelle + 'AdelleCyrillic-LightItalic.eot?#iefix') format('embedded-opentype'),
+  url($pathAdelle + 'AdelleCyrillic-LightItalic.woff') format('woff'),
+  url($pathAdelle + 'AdelleCyrillic-LightItalic.ttf') format('truetype');
+  font-weight: 300;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: 'Adelle Cyrillic';
+  src: url($pathAdelle + 'AdelleCyrillic-Italic.eot');
+  src: local('Adelle Cyrillic Italic'), local('AdelleCyrillic-Italic'),
+  url($pathAdelle + 'AdelleCyrillic-Italic.eot?#iefix') format('embedded-opentype'),
+  url($pathAdelle + 'AdelleCyrillic-Italic.woff') format('woff'),
+  url($pathAdelle + 'AdelleCyrillic-Italic.ttf') format('truetype');
+  font-weight: normal;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: 'Adelle Cyrillic';
+  src: url($pathAdelle + 'AdelleCyrillic.eot');
+  src: local('Adelle Cyrillic'), local('AdelleCyrillic'),
+  url($pathAdelle + 'AdelleCyrillic.eot?#iefix') format('embedded-opentype'),
+  url($pathAdelle + 'AdelleCyrillic.woff') format('woff'),
+  url($pathAdelle + 'AdelleCyrillic.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Adelle Cyrillic';
+  src: url($pathAdelle + 'AdelleCyrillic-Extrabold.eot');
+  src: local('Adelle Cyrillic Extrabold'), local('AdelleCyrillic-Extrabold'),
+  url($pathAdelle + 'AdelleCyrillic-Extrabold.eot?#iefix') format('embedded-opentype'),
+  url($pathAdelle + 'AdelleCyrillic-Extrabold.woff') format('woff'),
+  url($pathAdelle + 'AdelleCyrillic-Extrabold.ttf') format('truetype');
+  font-weight: 800;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Adelle Cyrillic';
+  src: url($pathAdelle + 'AdelleCyrillic-SemiBoldItalic.eot');
+  src: local('Adelle Cyrillic SemiBold Italic'), local('AdelleCyrillic-SemiBoldItalic'),
+  url($pathAdelle + 'AdelleCyrillic-SemiBoldItalic.eot?#iefix') format('embedded-opentype'),
+  url($pathAdelle + 'AdelleCyrillic-SemiBoldItalic.woff') format('woff'),
+  url($pathAdelle + 'AdelleCyrillic-SemiBoldItalic.ttf') format('truetype');
+  font-weight: 600;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: 'Adelle Cyrillic';
+  src: url($pathAdelle + 'AdelleCyrillic-Light.eot');
+  src: local('Adelle Cyrillic Light'), local('AdelleCyrillic-Light'),
+  url($pathAdelle + 'AdelleCyrillic-Light.eot?#iefix') format('embedded-opentype'),
+  url($pathAdelle + 'AdelleCyrillic-Light.woff') format('woff'),
+  url($pathAdelle + 'AdelleCyrillic-Light.ttf') format('truetype');
   font-weight: 300;
   font-style: normal;
 }
 
 @font-face {
   font-family: 'Adelle Cyrillic';
-  src: url($path + 'AdelleCyrillic-Italic.eot');
-  src: local($path + 'Adelle Cyrillic Italic'), local('AdelleCyrillic-Italic'),
-  url($path + 'AdelleCyrillic-Italic.eot?#iefix') format('embedded-opentype'),
-  url($path + 'AdelleCyrillic-Italic.woff') format('woff'),
-  url($path + 'AdelleCyrillic-Italic.ttf') format('truetype');
-  font-weight: 400;
+  src: url($pathAdelle + 'AdelleCyrillic-HeavyItalic.eot');
+  src: local('Adelle Cyrillic Heavy Italic'), local('AdelleCyrillic-HeavyItalic'),
+  url($pathAdelle + 'AdelleCyrillic-HeavyItalic.eot?#iefix') format('embedded-opentype'),
+  url($pathAdelle + 'AdelleCyrillic-HeavyItalic.woff') format('woff'),
+  url($pathAdelle + 'AdelleCyrillic-HeavyItalic.ttf') format('truetype');
+  font-weight: 900;
   font-style: italic;
 }
 
 @font-face {
   font-family: 'Adelle Cyrillic';
-  src: url($path + 'AdelleCyrillic-LightItalic.eot');
-  src: local($path + 'AdelleCyrillic-LightItalic'), local('AdelleCyrillic-LightItalic'),
-  url($path + 'AdelleCyrillic-LightItalic.eot?#iefix') format('embedded-opentype'),
-  url($path + 'AdelleCyrillic-LightItalic.woff') format('woff'),
-  url($path + 'AdelleCyrillic-LightItalic.ttf') format('truetype');
+  src: url($pathAdelle + 'AdelleCyrillic-SemiBold.eot');
+  src: local('Adelle Cyrillic SemiBold'), local('AdelleCyrillic-SemiBold'),
+  url($pathAdelle + 'AdelleCyrillic-SemiBold.eot?#iefix') format('embedded-opentype'),
+  url($pathAdelle + 'AdelleCyrillic-SemiBold.woff') format('woff'),
+  url($pathAdelle + 'AdelleCyrillic-SemiBold.ttf') format('truetype');
+  font-weight: 600;
+  font-style: normal;
+}
+
+
+@font-face {
+  font-family: 'Jost';
+  src: url($pathJost +'Jost-LightItalic.eot');
+  src: local('Jost Light Italic'), local('Jost-LightItalic'),
+  url($pathJost +'Jost-LightItalic.eot?#iefix') format('embedded-opentype'),
+  url($pathJost +'Jost-LightItalic.woff2') format('woff2'),
+  url($pathJost +'Jost-LightItalic.ttf') format('truetype');
   font-weight: 300;
   font-style: italic;
 }
 
 @font-face {
   font-family: 'Jost';
-  src: url($path + 'Jost-Regular.eot');
-  src: local($path + 'Jost Regular'), local('Jost-Regular'),
-  url($path + 'Jost-Regular.eot?#iefix') format('embedded-opentype'),
-  url($path + 'Jost-Regular.woff2') format('woff2'),
-  url($path + 'Jost-Regular.woff') format('woff'),
-  url($path + 'Jost-Regular.ttf') format('truetype');
-  font-weight: 400;
+  src: url($pathJost +'Jost-ExtraLight.eot');
+  src: local('Jost ExtraLight'), local('Jost-ExtraLight'),
+  url($pathJost +'Jost-ExtraLight.eot?#iefix') format('embedded-opentype'),
+  url($pathJost +'Jost-ExtraLight.woff2') format('woff2'),
+  url($pathJost +'Jost-ExtraLight.ttf') format('truetype');
+  font-weight: 200;
   font-style: normal;
 }
 
 @font-face {
   font-family: 'Jost';
-  src: url($path + 'Jost-Bold.eot');
-  src: local($path + 'Jost Bold'), local('Jost-ExtraBold'),
-  url($path + 'Jost-Bold.eot?#iefix') format('embedded-opentype'),
-  url($path + 'Jost-Bold.woff2') format('woff2'),
-  url($path + 'Jost-Bold.woff') format('woff'),
-  url($path + 'Jost-Bold.ttf') format('truetype');
-  font-weight: 700;
+  src: url($pathJost +'Jost-Light.eot');
+  src: local('Jost Light'), local('Jost-Light'),
+  url($pathJost +'Jost-Light.eot?#iefix') format('embedded-opentype'),
+  url($pathJost +'Jost-Light.woff2') format('woff2'),
+  url($pathJost +'Jost-Light.ttf') format('truetype');
+  font-weight: 300;
   font-style: normal;
+}
+
+@font-face {
+  font-family: 'Jost';
+  src: url($pathJost +'Jost-ExtraBoldItalic.eot');
+  src: local('Jost ExtraBold Italic'), local('Jost-ExtraBoldItalic'),
+  url($pathJost +'Jost-ExtraBoldItalic.eot?#iefix') format('embedded-opentype'),
+  url($pathJost +'Jost-ExtraBoldItalic.woff2') format('woff2'),
+  url($pathJost +'Jost-ExtraBoldItalic.ttf') format('truetype');
+  font-weight: 800;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: 'Jost';
+  src: url($pathJost +'Jost-SemiBold.eot');
+  src: local('Jost SemiBold'), local('Jost-SemiBold'),
+  url($pathJost +'Jost-SemiBold.eot?#iefix') format('embedded-opentype'),
+  url($pathJost +'Jost-SemiBold.woff2') format('woff2'),
+  url($pathJost +'Jost-SemiBold.ttf') format('truetype');
+  font-weight: 600;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Jost';
+  src: url($pathJost +'Jost-Regular.eot');
+  src: local('Jost Regular'), local('Jost-Regular'),
+  url($pathJost +'Jost-Regular.eot?#iefix') format('embedded-opentype'),
+  url($pathJost +'Jost-Regular.woff2') format('woff2'),
+  url($pathJost +'Jost-Regular.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Jost';
+  src: url($pathJost +'Jost-BoldItalic.eot');
+  src: local('Jost Bold Italic'), local('Jost-BoldItalic'),
+  url($pathJost +'Jost-BoldItalic.eot?#iefix') format('embedded-opentype'),
+  url($pathJost +'Jost-BoldItalic.woff2') format('woff2'),
+  url($pathJost +'Jost-BoldItalic.ttf') format('truetype');
+  font-weight: bold;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: 'Jost';
+  src: url($pathJost +'Jost-ExtraBold.eot');
+  src: local('Jost ExtraBold'), local('Jost-ExtraBold'),
+  url($pathJost +'Jost-ExtraBold.eot?#iefix') format('embedded-opentype'),
+  url($pathJost +'Jost-ExtraBold.woff2') format('woff2'),
+  url($pathJost +'Jost-ExtraBold.ttf') format('truetype');
+  font-weight: 800;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Jost';
+  src: url($pathJost +'Jost-MediumItalic.eot');
+  src: local('Jost Medium Italic'), local('Jost-MediumItalic'),
+  url($pathJost +'Jost-MediumItalic.eot?#iefix') format('embedded-opentype'),
+  url($pathJost +'Jost-MediumItalic.woff2') format('woff2'),
+  url($pathJost +'Jost-MediumItalic.ttf') format('truetype');
+  font-weight: 500;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: 'Jost';
+  src: url($pathJost +'Jost-ExtraLightItalic.eot');
+  src: local('Jost ExtraLight Italic'), local('Jost-ExtraLightItalic'),
+  url($pathJost +'Jost-ExtraLightItalic.eot?#iefix') format('embedded-opentype'),
+  url($pathJost +'Jost-ExtraLightItalic.woff2') format('woff2'),
+  url($pathJost +'Jost-ExtraLightItalic.ttf') format('truetype');
+  font-weight: 200;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: 'Jost';
+  src: url($pathJost +'Jost-Italic.eot');
+  src: local('Jost Italic'), local('Jost-Italic'),
+  url($pathJost +'Jost-Italic.eot?#iefix') format('embedded-opentype'),
+  url($pathJost +'Jost-Italic.woff2') format('woff2'),
+  url($pathJost +'Jost-Italic.ttf') format('truetype');
+  font-weight: normal;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: 'Jost';
+  src: url($pathJost +'Jost-Black.eot');
+  src: local('Jost Black'), local('Jost-Black'),
+  url($pathJost +'Jost-Black.eot?#iefix') format('embedded-opentype'),
+  url($pathJost +'Jost-Black.woff2') format('woff2'),
+  url($pathJost +'Jost-Black.ttf') format('truetype');
+  font-weight: 900;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Jost';
+  src: url($pathJost +'Jost-Bold.eot');
+  src: local('Jost Bold'), local('Jost-Bold'),
+  url($pathJost +'Jost-Bold.eot?#iefix') format('embedded-opentype'),
+  url($pathJost +'Jost-Bold.woff2') format('woff2'),
+  url($pathJost +'Jost-Bold.ttf') format('truetype');
+  font-weight: bold;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Jost';
+  src: url($pathJost +'Jost-BlackItalic.eot');
+  src: local('Jost Black Italic'), local('Jost-BlackItalic'),
+  url($pathJost +'Jost-BlackItalic.eot?#iefix') format('embedded-opentype'),
+  url($pathJost +'Jost-BlackItalic.woff2') format('woff2'),
+  url($pathJost +'Jost-BlackItalic.ttf') format('truetype');
+  font-weight: 900;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: 'Jost';
+  src: url($pathJost +'Jost-Medium.eot');
+  src: local('Jost Medium'), local('Jost-Medium'),
+  url($pathJost +'Jost-Medium.eot?#iefix') format('embedded-opentype'),
+  url($pathJost +'Jost-Medium.woff2') format('woff2'),
+  url($pathJost +'Jost-Medium.ttf') format('truetype');
+  font-weight: 500;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Jost';
+  src: url($pathJost +'Jost-Thin.eot');
+  src: local('Jost Thin'), local('Jost-Thin'),
+  url($pathJost +'Jost-Thin.eot?#iefix') format('embedded-opentype'),
+  url($pathJost +'Jost-Thin.woff2') format('woff2'),
+  url($pathJost +'Jost-Thin.ttf') format('truetype');
+  font-weight: 100;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Jost';
+  src: url($pathJost +'Jost-SemiBoldItalic.eot');
+  src: local('Jost SemiBold Italic'), local('Jost-SemiBoldItalic'),
+  url($pathJost +'Jost-SemiBoldItalic.eot?#iefix') format('embedded-opentype'),
+  url($pathJost +'Jost-SemiBoldItalic.woff2') format('woff2'),
+  url($pathJost +'Jost-SemiBoldItalic.ttf') format('truetype');
+  font-weight: 600;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: 'Jost';
+  src: url($pathJost +'Jost-ThinItalic.eot');
+  src: local('Jost Thin Italic'), local('Jost-ThinItalic'),
+  url($pathJost +'Jost-ThinItalic.eot?#iefix') format('embedded-opentype'),
+  url($pathJost +'Jost-ThinItalic.woff2') format('woff2'),
+  url($pathJost +'Jost-ThinItalic.ttf') format('truetype');
+  font-weight: 100;
+  font-style: italic;
 }

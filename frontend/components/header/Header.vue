@@ -33,4 +33,3 @@
 	}
 </script>
 
-<style lang="scss" src="./header.scss"></style>

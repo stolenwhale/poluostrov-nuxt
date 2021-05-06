@@ -1,0 +1,14 @@
+.header-menu {
+  display: flex;
+  justify-content: center;
+  flex-grow: 1;
+
+  &__item {
+    margin: 0 40px;
+  }
+
+  &__submenu {
+    position: absolute;
+  }
+}
+
