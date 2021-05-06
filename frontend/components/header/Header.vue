@@ -2,7 +2,7 @@
 	<header class="header container">
 		<HeaderLogo />
 		<HeaderMenu />
-		<Socials />
+		<Socials class="header__socials" />
 	</header>
 </template>
 
