@@ -1,5 +1,4 @@
 # poluostrov
-***
 - Front: vue + nuxt
 - Cms: Strapi
 - GraphQl
