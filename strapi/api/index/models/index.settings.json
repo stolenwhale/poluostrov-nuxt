@@ -14,7 +14,9 @@
   "attributes": {
     "head_slider": {
       "type": "dynamiczone",
-      "components": []
+      "components": [
+        "slider.slide"
+      ]
     },
     "intro": {
       "type": "dynamiczone",

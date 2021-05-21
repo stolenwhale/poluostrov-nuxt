@@ -16,7 +16,9 @@ export default {
     '@/assets/scss/02_fonts.scss',
     '@/assets/scss/03_typography.scss',
   ],
-  plugins: [],
+  plugins: [
+    { src: '@/plugins/vue-awesome-swiper', mode: 'client' }
+  ],
   components: true,
   buildModules: [
     '@nuxtjs/eslint-module',
@@ -36,13 +38,10 @@ export default {
       native: false,
       polyfill: true,
       directiveOnly: false,
-
-      // Default image must be in the static folder
-      // defaultImage: '/images/default-image.jpg',
-
       loadingClass: 'lazyLoad--is-loading',
       loadedClass: 'lazyLoad--is-loaded',
       appendClass: 'lazyLoad',
+      defaultImage: '/images/layout/lazy_poster.jpg',
 
       observerConfig: {
         // See IntersectionObserver documentation
